@@ -4,9 +4,19 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Simulator"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+       mc:Ignorable="d"
+        Title="MainWindow" Height="428.74" Width="1189.764">
+    <Grid Margin="0,0,2,-3" HorizontalAlignment="Right" Width="1170">
+
+        <TextBlock Text="Карьера менеджера отеля" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" />
+        <Button x:Name="btnStartGame" Content="Начать игру" Margin="10" Grid.Row="3" Click="BtnStartGame_Click" />
+        <Button x:Name="btnExitGame" Content="Выйти из игры" Margin="10" Grid.Row="4" Click="BtnExitGame_Click" />
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="200" />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
     </Grid>
 </Window>

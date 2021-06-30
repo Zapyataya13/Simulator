@@ -55,6 +55,31 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="WPF_Misc.cs" />
+    <Page Include="GameWindows\ConfirmWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GameWindows\HomeWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GameWindows\LITER.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GameWindows\LostWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GameWindows\PauseWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GameWindows\WinWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -62,6 +87,27 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessLogic\Game.cs" />
+    <Compile Include="BusinessLogic\Person.cs" />
+    <Compile Include="BusinessLogic\Rank1.cs" />
+    <Compile Include="GameWindows\ConfirmWindow.xaml.cs">
+      <DependentUpon>ConfirmWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GameWindows\HomeWindow.xaml.cs">
+      <DependentUpon>HomeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GameWindows\LITER.xaml.cs">
+      <DependentUpon>LITER.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GameWindows\LostWindow.xaml.cs">
+      <DependentUpon>LostWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GameWindows\PauseWindow.xaml.cs">
+      <DependentUpon>PauseWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GameWindows\WinWindow.xaml.cs">
+      <DependentUpon>WinWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -93,6 +139,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Gold.png" />
+    <Resource Include="Images\Intelect.png" />
+    <Resource Include="Images\NeutralMood.png" />
+    <Resource Include="Images\Rank.png" />
+    <Resource Include="Images\SadMood.png" />
+    <Resource Include="Images\Satiety.png" />
+    <Resource Include="Images\SmileMood.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
