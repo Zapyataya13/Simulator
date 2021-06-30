@@ -10,8 +10,6 @@
         <Border Background="Purple" Grid.RowSpan="5" Margin="0,0,0,10"/>
         <Button x:Name="btnReturnToGame" Content="Вернуться в игру" Height="50" Margin="250, 10" Grid.Row="0" Click="BtnReturnToGame_Click" Background="AntiqueWhite" />
         <Button x:Name="btnRestartGame" Content="Начать заново" Height="50" Margin="250, 10" Grid.Row="1" Click="BtnRestartGame_Click" Background="AntiqueWhite"/>
-        <Button x:Name="btnSaveGame" Content="Сохранить игру" Height="50" Margin="250, 10" Grid.Row="2" Click="BtnSaveGame_Click" Background="AntiqueWhite"/>
-        <Button x:Name="btnLoadGame" Content="Загрузить игру" Height="50" Margin="250, 10" Grid.Row="3" Click="BtnLoadGame_Click" Background="AntiqueWhite"/>
         <Button x:Name="btnEndGame" Content="Выйти в главное меню" Height="50" Margin="250, 10" Grid.Row="4" Click="BtnEndGame_Click" Background="AntiqueWhite"/>
         <Rectangle Fill="Black" HorizontalAlignment="Left" Height="449" Margin="792,-30,-27,0" Grid.RowSpan="5" Stroke="Black" VerticalAlignment="Top" Width="27"/>
         <Rectangle Fill="Black" HorizontalAlignment="Left" Height="30" Margin="-29,-30,-27,0" Stroke="Black" VerticalAlignment="Top" Width="848"/>

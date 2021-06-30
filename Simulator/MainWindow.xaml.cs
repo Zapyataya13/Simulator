@@ -34,11 +34,6 @@ namespace Simulator
             this.Close();
         }
 
-        void BtnLoadGame_Click(object sender, RoutedEventArgs e)
-        {
-            WPF_Misc.OpenPauseWindow(this, new LoadWindow(new HomeWindow(this), this));
-        }
-
         void BtnExitGame_Click(object sender, RoutedEventArgs e)
         {
             this.Close();

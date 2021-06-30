@@ -21,22 +21,6 @@ namespace Simulator.GameWindows
             this.Close();
         }
 
-        private void BtnSaveGame_Click(object sender, RoutedEventArgs e)
-        {
-            SaveWindow saveWindow = new SaveWindow(homeWindow);
-
-            WPF_Misc.FocusWindow(saveWindow);
-            WPF_Misc.OpenNewWindow(this, saveWindow, false);
-        }
-
-        private void BtnLoadGame_Click(object sender, RoutedEventArgs e)
-        {
-            LoadWindow loadWindow = new LoadWindow(homeWindow);
-
-            WPF_Misc.FocusWindow(loadWindow);
-            WPF_Misc.OpenNewWindow(this, loadWindow, false);
-        }
-
         private void BtnEndGame_Click(object sender, RoutedEventArgs e)
         {
             WPF_Misc.OpenNewWindow(this, new MainWindow(), false, false);

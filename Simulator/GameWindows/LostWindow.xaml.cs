@@ -24,14 +24,6 @@ namespace Simulator.GameWindows
             this.Close();
         }
 
-        void BtnLoadGame_Click(object sender, RoutedEventArgs e)
-        {
-            LoadWindow loadWindow = new LoadWindow(homeWindow);
-
-            WPF_Misc.FocusWindow(loadWindow);
-            WPF_Misc.OpenNewWindow(this, loadWindow, false);
-        }
-
         void BtnEndGame_Click(object sender, RoutedEventArgs e)
         {
             WPF_Misc.OpenNewWindow(this, new MainWindow(), false, false);

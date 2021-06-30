@@ -59,7 +59,6 @@
     <Compile Include="BusinessLogic\Game.cs" />
     <Compile Include="BusinessLogic\Person.cs" />
     <Compile Include="BusinessLogic\Rank1.cs" />
-    <Compile Include="BusinessLogic\Save.cs" />
     <Compile Include="GameWindows\ConfirmWindow.xaml.cs">
       <DependentUpon>ConfirmWindow.xaml</DependentUpon>
     </Compile>
@@ -69,17 +68,11 @@
     <Compile Include="GameWindows\LITER.xaml.cs">
       <DependentUpon>LITER.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GameWindows\LoadWindow.xaml.cs">
-      <DependentUpon>LoadWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="GameWindows\LostWindow.xaml.cs">
       <DependentUpon>LostWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="GameWindows\PauseWindow.xaml.cs">
       <DependentUpon>PauseWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="GameWindows\SaveWindow.xaml.cs">
-      <DependentUpon>SaveWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="GameWindows\WinWindow.xaml.cs">
       <DependentUpon>WinWindow.xaml</DependentUpon>
@@ -97,19 +90,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="GameWindows\LoadWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="GameWindows\LostWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="GameWindows\PauseWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="GameWindows\SaveWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -146,11 +131,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json">
-      <Version>13.0.1</Version>
-    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

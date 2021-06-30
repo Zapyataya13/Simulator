@@ -11,7 +11,6 @@
         <TextBlock Text="Симулятор" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" />
         <Image x:Name="imgMedicine" Height="150" HorizontalAlignment="Center" Grid.Row="1"  />
         <Button x:Name="btnStartGame" Content="Начать игру" Margin="10" Grid.Row="2" Click="BtnStartGame_Click" />
-        <Button x:Name="btnLoadGame" Content="Загрузить игру" Margin="10" Grid.Row="3" Click="BtnLoadGame_Click" />
         <Button x:Name="btnExitGame" Content="Выйти из игры" Margin="10" Grid.Row="4" Click="BtnExitGame_Click" />
         <Grid HorizontalAlignment="Left" Height="456" Margin="-15,-35,0,-20" VerticalAlignment="Top" Width="20" Grid.RowSpan="5" Background="Black"/>
         <Grid HorizontalAlignment="Left" Height="42" Margin="-15,-35,-6,0" VerticalAlignment="Top" Width="1191" Background="Black"/>
