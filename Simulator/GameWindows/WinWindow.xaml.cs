@@ -1,11 +1,9 @@
-﻿using System.Windows.Controls;
-
-namespace Simulator.GameWindows
+﻿namespace Simulator.GameWindows
 {
     /// <summary>
     /// Логика взаимодействия для WinWindow.xaml
     /// </summary>
-    public partial class WinWindow : Page
+    public partial class WinWindow
     {
         public WinWindow()
         {

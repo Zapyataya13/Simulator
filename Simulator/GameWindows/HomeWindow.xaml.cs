@@ -5,9 +5,9 @@ namespace Simulator.GameWindows
     /// <summary>
     /// Логика взаимодействия для HomeWindow.xaml
     /// </summary>
-    public partial class HomeWindow : Page
+    public partial class HomeWindow
     {
-        public HomeWindow(MainWindow mainWindow)
+        public HomeWindow(HomeWindow mainWindow)
         {
             InitializeComponent();
         }

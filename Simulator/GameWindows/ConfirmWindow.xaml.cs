@@ -1,11 +1,9 @@
-﻿using System.Windows.Controls;
-
-namespace Simulator.GameWindows
+﻿namespace Simulator.GameWindows
 {
     /// <summary>
     /// Логика взаимодействия для ConfirmWindow.xaml
     /// </summary>
-    public partial class ConfirmWindow : Page
+    public partial class ConfirmWindow
     {
         public ConfirmWindow()
         {

@@ -1,11 +1,9 @@
-﻿using System.Windows.Controls;
-
-namespace Simulator.GameWindows
+﻿namespace Simulator.GameWindows
 {
     /// <summary>
     /// Логика взаимодействия для LITER.xaml
     /// </summary>
-    public partial class LITER : Page
+    public partial class LITER
     {
         public LITER()
         {
