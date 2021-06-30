@@ -2,7 +2,7 @@
 
 namespace Simulator.BusinessLogic
 {
-    class Person
+    public class Person
     {
         // Делегат и событие для отправки сообщений во внешнюю среду
         public delegate void NotificationHandler(string message);
@@ -91,8 +91,6 @@ namespace Simulator.BusinessLogic
             }
         }
 
-
-
         public void DayWork()
         {
             if (SpendResourcesByHours(1))
@@ -177,8 +175,6 @@ namespace Simulator.BusinessLogic
             else
                 Mood += mood;
         }
-
-
 
         // public только из-за юнит-тестов
         public bool SubstractSatiety(int satiety)

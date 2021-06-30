@@ -8,19 +8,8 @@ using System.Windows.Media.Imaging;
 
 namespace Simulator
 {
-    class WPF_Misc
+    public class WPF_Misc
     {
-        // Получение нужной иконки настроения в зависимости от его значения
-        //public static Bitmap GetMoodImage(int mood)
-        //{
-        //    //if (mood >= 75)
-        //    //    return Simulator.Properties.Resources.SmileMood;
-        //    //else if (mood > 25 && mood < 75)
-        //    //    return Simulator.Properties.Resources.NeutralMood;
-        //    //else
-        //    //    return Simulator.Properties.Resources.SadMood;
-        //}
-
         // Метод, отвечающий за открытие нового окна
         public static void OpenNewWindow(Window currentWindow, Window windowToOpen, bool isCloseCurrentWindow = true, bool isCopyPreviousParameters = true)
         {
@@ -91,4 +80,3 @@ namespace Simulator
         }
     }
 }
-

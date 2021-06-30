@@ -1,13 +1,14 @@
-﻿using System.Windows;
+﻿using Simulator.GameWindows;
+using System.Windows;
 
 namespace Simulator
 {
     /// <summary>
-    /// Логика взаимодействия для HomeWindow.xaml
+    /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class HomeWindow : Window
+    public partial class MainWindow : Window
     {
-        public HomeWindow()
+        public MainWindow()
         {
             InitializeComponent();
 
@@ -19,8 +20,6 @@ namespace Simulator
             this.WindowStyle = WindowStyle.None;
             this.ResizeMode = ResizeMode.NoResize;
             this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
-
-
         }
 
         private void CloseWindow_Click(object sender, RoutedEventArgs e)
@@ -30,18 +29,19 @@ namespace Simulator
 
         void BtnStartGame_Click(object sender, RoutedEventArgs e)
         {
-            //WPF_Misc.OpenNewWindow(this, new HomeWindow(this));
+            WPF_Misc.OpenNewWindow(this, new HomeWindow(this));
 
             this.Close();
         }
 
-
+        void BtnLoadGame_Click(object sender, RoutedEventArgs e)
+        {
+            WPF_Misc.OpenPauseWindow(this, new LoadWindow(new HomeWindow(this), this));
+        }
 
         void BtnExitGame_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
-
-
     }
 }

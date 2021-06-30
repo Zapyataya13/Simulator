@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Simulator.BusinessLogic
 {
-    class Game
+    public class Game
     {
         // Сколько игровых часов проходит за одну реальную минуту
         public int GameHoursPerOneRealMinute { get; set; }
@@ -20,7 +20,7 @@ namespace Simulator.BusinessLogic
 
         public void SetPersonAndHomeWindow(HomeWindow homeWindow, Person person)
         {
-            //this.homeWindow = homeWindow;
+            this.homeWindow = homeWindow;
             this.person = person;
         }
 
@@ -34,7 +34,7 @@ namespace Simulator.BusinessLogic
         public async void ProcessTime()
         {
 
-            //homeWindow.tblTime.Text = person.GetTimeString();
+            homeWindow.tblTime.Text = person.GetTimeString();
             int i = 0;
 
             while (true)
@@ -48,7 +48,7 @@ namespace Simulator.BusinessLogic
                     }
 
                     person.CurrentTime = person.CurrentTime.Add(TimeSpan.FromMinutes(this.GameHoursPerOneRealMinute));
-                    //homeWindow.tblTime.Text = person.GetTimeString();
+                    homeWindow.tblTime.Text = person.GetTimeString();
                     i++;
 
                     if (i == (60 / this.GameHoursPerOneRealMinute))
@@ -56,10 +56,10 @@ namespace Simulator.BusinessLogic
                         if (person.Satiety < 3)
                         {
                             // Поражение
-                            //LostWindow lostWindow = new LostWindow(homeWindow);
+                            LostWindow lostWindow = new LostWindow(homeWindow);
 
-                            //WPF_Misc.FocusWindow(lostWindow);
-                            //WPF_Misc.OpenPauseWindow(homeWindow, lostWindow, false);
+                            WPF_Misc.FocusWindow(lostWindow);
+                            WPF_Misc.OpenPauseWindow(homeWindow, lostWindow, false);
                         }
 
                         person.Satiety -= 3;
@@ -83,16 +83,15 @@ namespace Simulator.BusinessLogic
         // Обновление характеристик
         public void RefreshCharacteristics()
         {
-            //homeWindow.tblSatiety.Text = person.Satiety.ToString();
+            homeWindow.tblSatiety.Text = person.Satiety.ToString();
 
-            //homeWindow.tblMood.Text = person.Mood.ToString();
-            //homeWindow.imgMood.Source = WPF_Misc.ImageSourceFromBitmap(WPF_Misc.GetMoodImage(person.Mood));
-            //homeWindow.tblIntelect.Text = person.Intelect.ToString();
+            homeWindow.tblMood.Text = person.Mood.ToString();
+            homeWindow.tblIntelect.Text = person.Intelect.ToString();
 
-            //homeWindow.tblGold.Text = person.Money.ToString();
-            //homeWindow.cc.Text = person.Rank.Name;
+            homeWindow.tblGold.Text = person.Money.ToString();
+            homeWindow.cc.Text = person.Rank.Name;
 
-            //homeWindow.tblTime.Text = person.GetTimeString();
+            homeWindow.tblTime.Text = person.GetTimeString();
         }
 
         // Обновление рангов
@@ -115,17 +114,17 @@ namespace Simulator.BusinessLogic
                 person.Rank = new Rank(Rank.GetRankNameById(6));
 
                 // Победа
-                //WinWindow winWindow = new WinWindow(homeWindow);
+                WinWindow winWindow = new WinWindow(homeWindow);
 
-                //WPF_Misc.FocusWindow(winWindow);
-                //WPF_Misc.OpenPauseWindow(homeWindow, winWindow, false);
+                WPF_Misc.FocusWindow(winWindow);
+                WPF_Misc.OpenPauseWindow(homeWindow, winWindow, false);
             }
         }
 
         // Обновление некоторых элементов интерфейса, требующих этого
         public void RefreshSomeUIElements()
         {
-            //homeWindow.btnDayWork.IsEnabled = person.Rank.Id >= 1 ? true : false;
+            homeWindow.btnDayWork.IsEnabled = person.Rank.Id >= 1 ? true : false;
         }
     }
 }

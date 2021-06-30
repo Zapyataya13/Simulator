@@ -2,7 +2,7 @@
 
 namespace Simulator.BusinessLogic
 {
-    class Rank
+    public struct Rank
     {
         public int Id;
         public string Name;
