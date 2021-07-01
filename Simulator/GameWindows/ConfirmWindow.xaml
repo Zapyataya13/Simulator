@@ -9,8 +9,8 @@
     <Grid>
         
         <TextBlock x:Name="tblText" FontSize="15" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Center" Text="" Grid.ColumnSpan="2"/>
-        <Button IsDefault="True" x:Name="btnYes" Content="Да" FontSize="20" Margin="30,20" Grid.Row="1" Grid.Column="0" Click="BtnYes_Click" Background="AliceBlue"/>
-        <Button IsCancel="True" x:Name="btnNo" Content="Нет" FontSize="20" Margin="30,20" Grid.Row="1" Grid.Column="1" Background="Red"/>
+        <Button IsDefault="True" x:Name="btnYes" Content="Да" FontSize="20" Margin="30,20" Grid.Row="1" Grid.Column="0" Click="BtnYes_Click"/>
+        <Button IsCancel="True" x:Name="btnNo" Content="Нет" FontSize="20" Margin="30,20" Grid.Row="1" Grid.Column="1"/>
         <Grid.RowDefinitions>
             <RowDefinition />
             <RowDefinition />

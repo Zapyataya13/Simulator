@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="Поражение" Height="450" Width="800">
     <Grid>
-        <Border Background="PaleVioletRed" Grid.RowSpan="4" Margin="0,0,0,0.75"/>
+        <Border Grid.RowSpan="4" Margin="0,0,0,0.75"/>
         <TextBlock Text="Вы проиграли!" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="250, 10" Grid.Row="0" />
-        <Button x:Name="btnRestartGame" Content="Начать заново" Height="50" Margin="250, 10" Grid.Row="1" Click="BtnRestartGame_Click" />
-        <Button x:Name="btnEndGame" Content="Выйти в главное меню" Height="50" Margin="250, 10" Grid.Row="3" Click="BtnEndGame_Click" />
+        <Button x:Name="btnRestartGame" Content="Начать заново" Height="50" Margin="250,40,250,10" Grid.Row="2" Click="BtnRestartGame_Click" />
+        <Button x:Name="btnEndGame" Content="Выйти в главное меню" Height="50" Margin="250,0,250, 10" Grid.Row="3" Click="BtnEndGame_Click" />
 
         <Grid.RowDefinitions>
             <RowDefinition />

@@ -98,7 +98,7 @@ namespace Simulator.BusinessLogic
                 int randomNumber = random.Next(0, 100);
                 int loot;
 
-                if (Rank.Name == "Перваш")
+                if (Rank.Name == "Первый курс")
                     loot = 3000;
                 else if (Rank.Name == "Второй курс")
                     loot = 5000;
@@ -106,13 +106,13 @@ namespace Simulator.BusinessLogic
                     loot = 7000;
                 else if (Rank.Name == "Четвертый курс")
                     loot = 9000;
-                else if (Rank.Name == "Интерн")
+                else if (Rank.Name == "Помошник менеджера отеля")
                 {
 
                     if (Intelect <= 90)
                     {
                         loot = 0;
-                        Notify?.Invoke("Че тупой?Книги читать надо)))");
+                        Notify?.Invoke("Лучше почитать книгу");
                     }
                     else
                         loot = 9000;
@@ -158,7 +158,7 @@ namespace Simulator.BusinessLogic
 
             if (Mood - mood < 0)
             {
-                Notify?.Invoke("Вы слишком тупой");
+                Notify?.Invoke("Вы мало знаете");
                 return false;
             }
             else
@@ -218,7 +218,7 @@ namespace Simulator.BusinessLogic
 
             if (Money - gold < 0)
             {
-                Notify?.Invoke("У вас слишком мало деняк");
+                Notify?.Invoke("Недостаточно денег");
                 return false;
             }
             else

@@ -7,14 +7,10 @@
         mc:Ignorable="d"
         Title="LITER" Height="450" Width="800">
     <Grid>
-        <Button x:Name="Chainick" Content="Терапия для чайников-300р" HorizontalAlignment="Left" VerticalAlignment="Top" Width="792" Margin="0,23,0,0" Click="Book_Click" />
-        <Button x:Name="Sred" Content="Терапия для средних знаний-1000р" HorizontalAlignment="Left" Margin="0,59,0,0" VerticalAlignment="Top" Width="792"   Click="Book_Click"/>
-        <Button x:Name="vis" Content="Терапия для высокого уровня квалиффикации-100000р" HorizontalAlignment="Left" VerticalAlignment="Top" Width="792" Margin="0,99,0,0"  Click="Book_Click"/>
-        <Button x:Name="BOG" Content="Терапия для богов 100000000 украинских долларов" HorizontalAlignment="Left" Margin="0,148,0,0" VerticalAlignment="Top" Width="792"  Click="Book_Click"/>
-        <Button x:Name="Closewindow" Content="Close" HorizontalAlignment="Left" Margin="272,286,0,0" VerticalAlignment="Top" Width="153" Height="69" Click="Closewindow_Click"/>
-
-
-
-
+        <Button x:Name="Chainick" Content="Все об отелях - 800р" HorizontalAlignment="Left" VerticalAlignment="Top" Width="790" Margin="0,20,0,0" Click="Book_Click" />
+        <Button x:Name="Sred" Content="Курсы ресторанного бизнеса - 3000р" HorizontalAlignment="Left" Margin="0,50,0,0" VerticalAlignment="Top" Width="790"   Click="Book_Click"/>
+        <Button x:Name="vis" Content="Курсы гостеприимства - 8000р" HorizontalAlignment="Left" VerticalAlignment="Top" Width="790" Margin="0,80,0,0"  Click="Book_Click"/>
+        <Button x:Name="BOG" Content="Репититор инностранных языков - 9000р" HorizontalAlignment="Left" Margin="0,110,0,0" VerticalAlignment="Top" Width="790"  Click="Book_Click"/>
+        <Button x:Name="Closewindow" Content="Закрыть" HorizontalAlignment="Left" Margin="325,330,0,0" VerticalAlignment="Top" Width="153" Height="69" Click="Closewindow_Click"/>
     </Grid>
 </Window>

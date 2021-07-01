@@ -7,14 +7,10 @@
         mc:Ignorable="d"
         Title="Пауза" Height="450" Width="800">
     <Grid>
-        <Border Background="Purple" Grid.RowSpan="5" Margin="0,0,0,10"/>
-        <Button x:Name="btnReturnToGame" Content="Вернуться в игру" Height="50" Margin="250, 10" Grid.Row="0" Click="BtnReturnToGame_Click" Background="AntiqueWhite" />
-        <Button x:Name="btnRestartGame" Content="Начать заново" Height="50" Margin="250, 10" Grid.Row="1" Click="BtnRestartGame_Click" Background="AntiqueWhite"/>
-        <Button x:Name="btnEndGame" Content="Выйти в главное меню" Height="50" Margin="250, 10" Grid.Row="4" Click="BtnEndGame_Click" Background="AntiqueWhite"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="449" Margin="792,-30,-27,0" Grid.RowSpan="5" Stroke="Black" VerticalAlignment="Top" Width="27"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="30" Margin="-29,-30,-27,0" Stroke="Black" VerticalAlignment="Top" Width="848"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="419" Grid.RowSpan="5" Stroke="Black" VerticalAlignment="Top" Width="29" Margin="-29,0,0,0"/>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="29" Margin="-29,74.2,-27,-19.2" Grid.Row="4" Stroke="Black" VerticalAlignment="Top" Width="848"/>
+        <Border Grid.RowSpan="5" Margin="0,0,0,10"/>
+        <Button x:Name="btnReturnToGame" Content="Вернуться в игру" Height="50" Margin="250,20,250,10" Grid.Row="2" Click="BtnReturnToGame_Click"/>
+        <Button x:Name="btnRestartGame" Content="Начать заново" Height="50" Margin="250,20,250,10" Grid.Row="3" Click="BtnRestartGame_Click"/>
+        <Button x:Name="btnEndGame" Content="Выйти в главное меню" Height="50" Margin="250, 10" Grid.Row="4" Click="BtnEndGame_Click"/>
 
         <Grid.RowDefinitions>
             <RowDefinition />
